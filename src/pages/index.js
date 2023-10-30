@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import CTAOneliner from "@/components/CTAOneliner";
 import HeroImage from "@/components/HeroImage";
 import Logo from "@/components/Logo";
+import Pricing from "@/components/Pricing";
 import Setup from "@/components/Setup";
 import ValueProposition from "@/components/ValueProposition";
 
@@ -12,7 +13,7 @@ function Home() {
   const handleTryItClick = () => {
     alert("Hello Maker")
   }
-  
+
   return (
     <div className="home">
       <Logo />
@@ -20,6 +21,7 @@ function Home() {
       <ValueProposition />
       <Button title="Try it Yourself" onClick={handleTryItClick} />
       <Setup />
+      <Pricing />
       <CTAOneliner text="Ready to shine on social media? Let's tweet your way to the top!" />
       <Benefits />
     </div>
