@@ -1,5 +1,5 @@
 
-function CTAOneliner({ text }) {
+const CTAOneliner = ({text}) => {
   return (
     <div className="cta-oneliner">
       {text}

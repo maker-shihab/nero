@@ -1,5 +1,5 @@
 
-function HeroImage() {
+const HeroImage= () => {
   return (
     <div className="hero-image">
       {/* Your hero image content */}

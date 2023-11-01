@@ -1,5 +1,5 @@
 
-function ValueProposition() {
+const ValueProposition = () =>  {
   return (
     <div className="value-proposition">
       {/* Your value proposition content */}

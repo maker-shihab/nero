@@ -1,7 +1,7 @@
 import Button from '@/components/Button';
 import PriceTable from '@/components/PriceTable';
 
-function Pricing() {
+const Pricing = () => {
   return (
     <div className="pricing">
       <h1>Pricing</h1>
