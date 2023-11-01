@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+/* Nav */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+/* Nav */
+.phone_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 15px;
+}

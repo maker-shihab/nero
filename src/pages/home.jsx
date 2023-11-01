@@ -1,12 +1,11 @@
-import Benefits from '@/components/Benefits';
-import Button from '@/components/Button';
-import CTAOneliner from '@/components/CTAOneliner';
-import HeroArea from '@/components/HeroArea';
-import Layout from '@/components/Layout';
-import Pricing from '@/components/Pricing';
-import { SectionLogo } from '@/components/SectionLogo';
-import Setup from '@/components/Setup';
-import ValueProposition from '@/components/ValueProposition';
+import Benefits from "@/components/Benefits";
+import Button from "@/components/Button";
+import CTAOneliner from "@/components/CTAOneliner";
+import HeroArea from "@/components/HeroArea";
+import Layout from "@/components/Layout";
+import Pricing from "@/components/Pricing";
+import Setup from "@/components/Setup";
+import ValueProposition from "@/components/ValueProposition";
 
 export default function Home() {
   // For Button
@@ -17,9 +16,6 @@ export default function Home() {
     <Layout>
       <div className="home">
         <HeroArea />
-        <SectionLogo/>
-
-        
         <ValueProposition />
         <Button title="Try it Yourself" onClick={handleTryItClick} />
         <Setup />
@@ -28,5 +24,5 @@ export default function Home() {
         <Benefits />
       </div>
     </Layout>
-  )
+  );
 }

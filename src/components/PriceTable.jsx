@@ -1,5 +1,5 @@
 
-function PriceTable({ title, description, price }) {
+const PriceTable  = ({ title, description, price }) => {
   return (
     <div className="price-table">
       <h2>{title}</h2>

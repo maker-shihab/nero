@@ -1,5 +1,5 @@
 
-function CTA2({ text }) {
+const CTA2 = ({text}) => {
   return (
     <div className="cta-2">
       {text}
