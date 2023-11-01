@@ -1,13 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AiFillInstagram } from 'react-icons/ai';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { BsDiscord, BsLinkedin, BsTwitter } from 'react-icons/bs';
 import { TbBrandWebflow } from 'react-icons/tb';
 import styles from '../../styles/Footer.module.css';
+import { Footer2 } from "./Footer2";
 const Footer = () => {
   return (
+    <>
+    <Footer2 />
     <footer className={styles.footer_section}>
       <div className={styles.footer_container}>
+        <div className={styles.image_footer_shape}>
+          <Image src='/footer-icon.png' alt="footer_icon" width={100} height={110} loading="lazy" />
+        </div>
         <div className={styles.footer_content}>
           <div className={styles.footer_wrapper}>
             <h2 className={styles.footer_title}>Discover Premium <br /> <span className={styles.footer_grad_title}>Webflow</span> Products</h2>
@@ -53,10 +60,10 @@ const Footer = () => {
                 <p className={styles.footer_copywrite}>© 2023 Flowbase</p>
               </li>
               <li>
-                <Link href='/'>Flowbase</Link>
+                <Link href='/'>• Flowbase</Link>
               </li>
               <li>
-                <Link href='/'>Components</Link>
+                <Link href='/'>• Components</Link>
               </li>
               <li>
                 <Link href='/'>• Templates</Link>
@@ -66,6 +73,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   )
 }
 

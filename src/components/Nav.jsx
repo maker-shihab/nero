@@ -1,8 +1,8 @@
 import Link from 'next/link';
-
+import styles from '../styles/Header.module.css';
 function Nav() {
   return (
-    <nav className="nav">
+    <nav className={styles.navigation}>
       <ul>
         <li>
           <Link href="/">Home</Link>

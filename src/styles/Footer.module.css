@@ -148,3 +148,13 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+.image_footer_shape {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,7 +1,8 @@
 import Benefits from "@/components/Benefits";
 import Button from "@/components/Button";
 import CTAOneliner from "@/components/CTAOneliner";
-import HeroImage from "@/components/HeroImage";
+import HeroArea from "@/components/HeroArea";
+import Layout from "@/components/Layout";
 import Pricing from "@/components/Pricing";
 import Setup from "@/components/Setup";
 import ValueProposition from "@/components/ValueProposition";
@@ -11,16 +12,17 @@ export default function Home() {
   const handleTryItClick = () => {
     alert("Hello Maker");
   }
-
   return (
-    <div className="home">
-      <HeroImage />
-      <ValueProposition />
-      <Button title="Try it Yourself" onClick={handleTryItClick} />
-      <Setup />
-      <Pricing />
-      <CTAOneliner text="Ready to shine on social media? Let's tweet your way to the top!" />
-      <Benefits />
-    </div>
+    <Layout>
+      <div className="home">
+        <HeroArea />
+        <ValueProposition />
+        <Button title="Try it Yourself" onClick={handleTryItClick} />
+        <Setup />
+        <Pricing />
+        <CTAOneliner text="Ready to shine on social media? Let's tweet your way to the top!" />
+        <Benefits />
+      </div>
+    </Layout>
   );
 }

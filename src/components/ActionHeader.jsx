@@ -1,13 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+import { GrPhone } from 'react-icons/gr';
+import styles from '../styles/Header.module.css';
 import Button from "./Button";
 
 const ActionHeader= () => {
   return (
     <>
-      <div className="phone_wrap">
+      <div className={styles.phone_wrap}>
         <span>
-          <Image src='/demo.png' alt="icon" height={40} width={35} />
+          <GrPhone />
         </span>
         <Link href='tel:1800270963'>
           (+66) 1800270963
