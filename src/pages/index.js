@@ -5,6 +5,7 @@ import HeroArea from '@/components/HeroArea';
 import Layout from '@/components/Layout';
 import Pricing from '@/components/Pricing';
 import { SectionLogo } from '@/components/SectionLogo';
+import Services from '@/components/Services';
 import Setup from '@/components/Setup';
 import ValueProposition from '@/components/ValueProposition';
 
@@ -18,8 +19,8 @@ export default function Home() {
       <div className="home">
         <HeroArea />
         <SectionLogo/>
+        <Services/>
 
-        
         <ValueProposition />
         <Button title="Try it Yourself" onClick={handleTryItClick} />
         <Setup />
