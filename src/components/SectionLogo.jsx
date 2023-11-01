@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export const SectionLogo = () => {
+const SectionLogo = () => {
   return (
     <section className='section_logo'>
       <div className="container">
@@ -25,3 +25,5 @@ export const SectionLogo = () => {
     </section>
   )
 }
+
+export default SectionLogo
