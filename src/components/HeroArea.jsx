@@ -20,7 +20,7 @@ const HeroArea = () => {
           </div>
         </div>
         <div className="hero_illustration">
-          <Image src="/hero-illustration.png" alt="hero-shape" loading="lazy" objectFit="contain" height={400} width={550} />
+          <Image src="/images/hero-illustration.png" alt="hero-shape" loading="lazy" objectFit="contain" height={400} width={550} />
         </div>
       </div>
     </section>
