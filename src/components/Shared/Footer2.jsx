@@ -12,7 +12,7 @@ export const Footer2 = () => {
             <div className="footer_logo">
               <Link href='/'>
                 <Image
-                  src="/logo.svg"
+                  src="/images/logo.svg"
                   alt="logo"
                   width={120}
                   height={60} 
@@ -23,11 +23,11 @@ export const Footer2 = () => {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
             <div className={styles.contact}>
               <Link href='/'>
-                <Image src="/envolep-bel.svg" alt='icon' width={25} height={20} loading='lazy' />
+                <Image src="/images/envolep-bel.svg" alt='icon' width={25} height={20} loading='lazy' />
                 <span>tom@flowbase.co</span>
               </Link>
               <Link href='/'>
-                <Image src="/live-chart.svg" alt='icon' width={25} height={20} loading='lazy' />
+                <Image src="/images/live-chart.svg" alt='icon' width={25} height={20} loading='lazy' />
                 <span>Livechat</span>
               </Link>
             </div>

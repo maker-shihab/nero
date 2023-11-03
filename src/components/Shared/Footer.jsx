@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className={styles.footer_section}>
       <div className={styles.footer_container}>
         <div className={styles.image_footer_shape}>
-          <Image src='/footer-icon.png' alt="footer_icon" width={100} height={110} loading="lazy" />
+          <Image src='/images/footer-icon.png' alt="footer_icon" width={100} height={110} loading="lazy" />
         </div>
         <div className={styles.footer_content}>
           <div className={styles.footer_wrapper}>
