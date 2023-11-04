@@ -1,8 +1,9 @@
+import DashboardLayout from "@/components/DashboardLayout";
 
-const subscription = () => {
+export default function Subscription() {
   return (
-    <div>subscription</div>
-  )
+    <DashboardLayout>
+      <h2>Subscription Information</h2>
+    </DashboardLayout>
+  );
 }
-
-export default subscription

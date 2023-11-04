@@ -12,13 +12,13 @@ export default function Home() {
   }
   return (
     <Layout>
-      <div className="home">
+      <>
         <HeroArea />
         <SectionLogo/>
         <Services/>
         <ContentSection />
         <Blog />
-      </div>
+      </>
     </Layout>
   )
 }

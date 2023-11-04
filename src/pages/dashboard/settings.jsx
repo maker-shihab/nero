@@ -1,8 +1,9 @@
+import DashboardLayout from "@/components/DashboardLayout";
 
-const settings = () => {
+export default function Settings() {
   return (
-    <div>settings</div>
-  )
+    <DashboardLayout>
+      <h2>Settings</h2>
+    </DashboardLayout>
+  );
 }
-
-export default settings
