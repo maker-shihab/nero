@@ -1,19 +1,19 @@
+import ActionHeader from '../ActionHeader';
+import Logo from '../Logo';
+import Nav from '../Nav';
 
-import ActionHeader from "../ActionHeader";
-import Logo from "../Logo";
-import Nav from "../Nav";
-
-const Header = () => {
+const Header = ({ userLoggedIn }) => {
   return (
     <header>
       <div className="container">
         <div className="headerArea">
           <Logo />
-          <Nav />
+          <Nav userLoggedIn={userLoggedIn} />
           <ActionHeader />
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
+
 export default Header;

@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Footer from "./Shared/Footer";
-import Header from "./Shared/Header";
+import Head from 'next/head';
+import { Footer2 } from './Shared/Footer2';
+import Header from './Shared/Header';
 
-function Layout({ showHeader = true, showFooter = true, children }) {
+function Layout({ showHeader = true, showFooter = true, userLoggedIn, children }) {
   return (
     <div>
       <Head>
@@ -11,11 +11,9 @@ function Layout({ showHeader = true, showFooter = true, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {showHeader && <Header />}
-      <main>
-        {children}
-      </main>
-      {showFooter && <Footer />}
+      {showHeader && <Header userLoggedIn={userLoggedIn} />} {/* Pass userLoggedIn prop to Header */}
+      <main>{children}</main>
+      {showFooter && <Footer2 />}
     </div>
   );
 }
