@@ -18,7 +18,7 @@ const ContentSection = () => {
               </p>
             </div>
             <div className="content_illustration">
-              <Image src="/public/images/team/sketch.svg" width={120} height={35} alt='team-icon' />
+              <Image src="/images/team/sketch.svg" width={120} height={35} alt='team-icon' />
             </div>
           </div>
           

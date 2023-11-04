@@ -1,16 +1,19 @@
 
-import styles from '../../styles/Header.module.css';
 import ActionHeader from "../ActionHeader";
 import Logo from "../Logo";
 import Nav from "../Nav";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <Logo />
-      <Nav />
-      <ActionHeader/>
-    </div>
+    <header>
+      <div className="container">
+        <div className="headerArea">
+          <Logo />
+          <Nav />
+          <ActionHeader />
+        </div>
+      </div>
+    </header>
   )
 }
 export default Header;

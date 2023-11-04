@@ -1,12 +1,11 @@
 import Link from "next/link";
+import { FaBars } from 'react-icons/fa';
 import { GrPhone } from 'react-icons/gr';
-import styles from '../styles/Header.module.css';
-import Button from "./Button";
 
-const ActionHeader= () => {
+const ActionHeader = () => {
   return (
-    <>
-      <div className={styles.phone_wrap}>
+    <div className="header_right">
+      <div className="phone_wrap">
         <span>
           <GrPhone />
         </span>
@@ -14,8 +13,10 @@ const ActionHeader= () => {
           (+66) 1800270963
         </Link>
       </div>
-      <Button />
-    </>
+      <div className="menuHandaller">
+        <FaBars />
+      </div>
+    </div>
   )
 }
 

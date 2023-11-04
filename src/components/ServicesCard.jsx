@@ -8,11 +8,11 @@ const ServicesCard = ({ icon, title, pragraph, btnLink }) => {
         <Image src={icon} alt='service-image' width={70} height={70} loading='lazy' />
       </div>
       <div className="services_text">
-        <h3 className='services_title'>{title}</h3>
-        <p className='services_pragraph'>
+        <h3 className='heading-3'>{title}</h3>
+        <p className='paragraph-2'>
           {pragraph}
         </p>
-        <Link href={btnLink} className="btn btn_primary">
+        <Link href={btnLink} className="btn btn-primary">
           Learn More
         </Link>
       </div>
