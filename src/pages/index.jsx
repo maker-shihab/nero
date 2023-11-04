@@ -1,8 +1,7 @@
-import Benefits from '@/components/Benefits';
-import Button from '@/components/Button';
+import Blog from '@/components/Blog';
+import ContentSection from '@/components/ContentSection';
 import HeroArea from '@/components/HeroArea';
 import Layout from '@/components/Layout';
-import Pricing from '@/components/Pricing';
 import SectionLogo from '@/components/SectionLogo';
 import Services from '@/components/Services';
 
@@ -17,10 +16,8 @@ export default function Home() {
         <HeroArea />
         <SectionLogo/>
         <Services/>
-
-        <Button title="Try it Yourself" onClick={handleTryItClick} />
-        <Pricing />
-        <Benefits />
+        <ContentSection />
+        <Blog />
       </div>
     </Layout>
   )

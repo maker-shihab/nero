@@ -22,3 +22,29 @@
   color: rgba(107, 111, 154, 0.61);
   font-size: 16px;
 }
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px 0;
+  column-gap: 40px;
+}
+.footer_right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contact {
+  margin-top: 10px;
+}
+.contact a {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 15px;
+}
+.contact a span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.contact a:hover {
+  text-decoration: underline;
+}

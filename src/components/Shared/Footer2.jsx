@@ -6,7 +6,7 @@ import styles from '../../styles/Footer2.module.css';
 export const Footer2 = () => {
   return (
     <footer>
-      <div className={styles.footer_container}>
+      <div className="container">
         <div className={styles.footer_wrapper}>
           <div className={styles.footer_left}>
             <div className="footer_logo">
@@ -14,16 +14,16 @@ export const Footer2 = () => {
                 <Image
                   src="/images/logo.svg"
                   alt="logo"
-                  width={120}
-                  height={60} 
+                  width={100}
+                  height={40} 
                   loading="lazy" 
                 />
               </Link>
             </div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
+            <p className="paragraph-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</p>
             <div className={styles.contact}>
               <Link href='/'>
-                <Image src="/images/envolep-bel.svg" alt='icon' width={25} height={20} loading='lazy' />
+                <Image src="/images/envolep-bel.svg" alt='icon' width={20} height={20} loading='lazy' />
                 <span>tom@flowbase.co</span>
               </Link>
               <Link href='/'>
@@ -90,7 +90,7 @@ export const Footer2 = () => {
         </div>
         <div className={styles.footer_bottom}>
           <div className="footer_cp">
-            <p>© Copyright 2019 flowbase.co</p>
+            <p>© Copyright 2023 <Link href="/">example.com</Link></p>
             <div className="footer_socail">
               <ul>
               <li>

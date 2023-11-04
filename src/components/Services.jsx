@@ -2,7 +2,7 @@ import ServicesCard from './ServicesCard'
 
 const Services = () => {
   return (
-    <section className='services'>
+    <section className="services">
       <div className="container">
         <div className="services_wrapper">
           <div className="global_header">

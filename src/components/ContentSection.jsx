@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const ContentSection = () => {
   return (
@@ -11,31 +12,32 @@ const ContentSection = () => {
               <h2 className='global_title'>
                 Creative and Technology Partner for Growing Brands
               </h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p className="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <br />
-              <p>
+              <p className="paragraph">
                 Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
               </p>
             </div>
             <div className="content_illustration">
-              <Image src="/public/images/team/sketch.svg" width={120} height={35} alt='team-icon' />
+              <Image src="/images/content-section.png" width={550} height={350} alt='team-icon' />
             </div>
           </div>
-          
+
           <div className="single_content content_two">
             <div className="global_header">
               <h3 className='global_subtitle'>CONTENT SECTION</h3>
               <h2 className='global_title'>
                 Creative and Technology Partner for Growing Brands
               </h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              <br />
-              <p>
+              <p className="paragraph">
                 Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
               </p>
+              <div className="secton_btn">
+                <Link href="/" className="btn btn-primary">Learn More</Link>
+              </div>
             </div>
             <div className="content_illustration">
-              <Image src="/public/images/team/sketch.svg" width={120} height={35} alt='team-icon' />
+              <Image src="/images/hero-illustration.png" width={550} height={350} alt='team-icon' />
             </div>
           </div>
         </div>
