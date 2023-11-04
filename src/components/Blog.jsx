@@ -1,4 +1,27 @@
-import BlogCard from "./BlogCard"
+import BlogCard from "./BlogCard";
+const blogCards = [
+  {
+    thumb: "/images/blog/1.jpeg",
+    title: "Why will webflow dominate the web in 2020.",
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    category: "DESIGN",
+    btnLink: '/'
+  },
+  {
+    thumb: "/images/blog/2.jpeg",
+    title: "How to craft a perfect marketing campaign.",
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    category: "BUSINESS",
+    btnLink: '/'
+  },
+  {
+    thumb: "/images/blog/3.jpeg",
+    title: "Learn how to get started with webflow interactions.",
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    category: "LEARN",
+    btnLink: '/'
+  },
+];
 
 const Blog = () => {
   return (
@@ -12,9 +35,11 @@ const Blog = () => {
             </h2>
           </div>
           <div className="blog_content">
-            <BlogCard></BlogCard>
-            <BlogCard></BlogCard>
-            <BlogCard></BlogCard>
+            {
+              blogCards.map((blog, index) => (
+                <BlogCard title={blog.title} key={index} thumb={blog.thumb} category={blog.category} content={blog.content} btnLink={blog.btnLink} />
+              ))
+            }
           </div>
         </div>
       </div>

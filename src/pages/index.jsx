@@ -1,4 +1,5 @@
 import Benefits from '@/components/Benefits';
+import Blog from '@/components/Blog';
 import ContentSection from '@/components/ContentSection';
 import HeroArea from '@/components/HeroArea';
 import Layout from '@/components/Layout';
@@ -18,6 +19,7 @@ export default function Home() {
         <SectionLogo/>
         <Services/>
         <ContentSection />
+        <Blog />
         <Pricing />
         <Benefits />
       </div>

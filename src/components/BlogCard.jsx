@@ -1,17 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const BlogCard = () => {
+const BlogCard = ({title, thumb, content, btnLink, category}) => {
   return (
     <div className='blog_card'>
       <div className="blog_card_head">
-        <Image src="/public/images/team/sketch.svg" width={250} height={220} alt='team-icon' />
+        <Image src={thumb} width={250} height={220} alt='team-icon' />
       </div>
       <div className="blog_card_body">
-        <h4 className="blog_tag">BUSINESS</h4>
-        <h3>Learn how to get started with webflow interactions.</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <Link href='/' className="btn btn-primary">Learn More</Link>
+        <h4 className="blog_tag">{category}</h4>
+        <h3 className="heading-3">{title}</h3>
+        <p className="paragraph">{content}</p>
+        <div className="secton_btn">
+          <Link href={btnLink} className="btn btn-primary">Learn More</Link>
+        </div>
       </div>
     </div>
   )
