@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "homepage": "https://maker-shihab.github.io/nero/",
   "dependencies": {
     "js-cookie": "^3.0.5",
     "next": "14.0.1",
