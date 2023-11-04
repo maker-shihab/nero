@@ -1,8 +1,9 @@
+import DashboardLayout from "@/components/DashboardLayout";
 
-const usage = () => {
+export default function Usage() {
   return (
-    <div>usage</div>
-  )
+    <DashboardLayout>
+      <h2>Usage Information</h2>
+    </DashboardLayout>
+  );
 }
-
-export default usage

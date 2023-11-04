@@ -6,16 +6,14 @@ const HeroArea = () => {
       <div className="container">
         <div className="hero_wrapper">
           <div className="hero_text">
-            <h1 className="heading">Drive Customers Through Digital Channels.
+            <h1 className="heading">Hi, I am Linda. I help you to Be Seen on social media.
             </h1>
-            <p className="paragraph-hero">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s
+            <p className="paragraph-hero">Boost your visibility, bond with the big names, and stay ahead with real-time interactions.
+Embrace the spotlight, and let every tweet pave your way to success!
             </p>
             <div className="hero_btns">
               <Link href="/" className="btn btn-primary">
-                Clone this template
-              </Link>
-              <Link href="/" className="btn_primary_nobg">
-                See our Process
+              Try it Yourself!
               </Link>
             </div>
           </div>
