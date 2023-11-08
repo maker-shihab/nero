@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Footer2 } from './Shared/Footer2';
+import { Footer } from './Shared/Footer';
 import Header from './Shared/Header';
 
 function Layout({ showHeader = true, showFooter = true, userLoggedIn, children }) {
@@ -13,7 +13,7 @@ function Layout({ showHeader = true, showFooter = true, userLoggedIn, children }
       </Head>
       {showHeader && <Header userLoggedIn={userLoggedIn} />} {/* Pass userLoggedIn prop to Header */}
       <main>{children}</main>
-      {showFooter && <Footer2 />}
+      {showFooter && <Footer />}
     </div>
   );
 }
