@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import Layout from '@/components/Layout';
 import { getCookie, setCookie } from '@/util/cookie';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import Layout from '../components/layout';
 
 export default function Register() {
   const router = useRouter();

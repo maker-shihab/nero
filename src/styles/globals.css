@@ -2,7 +2,7 @@
   --max-width: 1100px;
   --border-radius: 12px;
   --font-inter: "Inter", sans-serif;
-  --primary-color: #484dff;
+  --primary-color: #00c0cd;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +50,7 @@ a {
 .heading {
   margin-top: 0px;
   margin-bottom: 15px;
-  color: #1a3066;
+  color: #092a4b;
   font-size: 55px;
   line-height: 1;
   letter-spacing: -0.5px;
@@ -58,7 +58,7 @@ a {
 .global_subtitle {
   max-width: 500px;
   margin-bottom: 15px;
-  color: #484dff;
+  color: var(--primary-color);
   font-size: 14px;
   font-weight: 700;
   text-align: left;
@@ -66,14 +66,15 @@ a {
   text-transform: uppercase;
 }
 .global_title {
+  padding-top: 0px;
   max-width: 500px;
   margin-top: 0px;
   margin-bottom: 20px;
-  color: #1a3066;
+  color: #092a4b;
   font-size: 46px;
-  line-height: 1;
+  line-height: 1.1;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
 }
 .global_title span {
   color: var(--primary-color);
@@ -234,7 +235,7 @@ header {
   padding-top: 40px;
 }
 .services_card {
-  padding: 60px 25px;
+  padding: 40px 25px;
   border-radius: 15px;
   background: #fff;
   box-shadow: 14px 14px 200px 0 rgba(0, 22, 50, 0.06);
@@ -249,7 +250,7 @@ header {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 .services_icon {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .services_text .btn {
   margin-top: 35px;
@@ -337,6 +338,7 @@ header {
 /* Footer */
 footer {
   padding: 60px 0;
+  padding-top: 0;
 }
 .footer_logo {
   padding-bottom: 20px;
@@ -428,7 +430,7 @@ footer .paragraph-2 {
 }
 .form_title {
   font-size: 42px;
-  color: #1a3066;
+  color: #092a4b;
   padding-bottom: 10px;
 }
 .body_form {
@@ -515,4 +517,90 @@ footer .paragraph-2 {
 }
 .dashboard_homeredirect:hover {
   text-decoration: underline;
+}
+.ctaArea {
+  padding: 80px;
+  background: #0a1f44;
+  text-align: center;
+}
+.ctaWrapper {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.ctaTitle {
+  font-size: 56px;
+  color: #ffffffe3;
+  line-height: 1.1;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.ctaPragraph {
+  font-size: 18px;
+  color: #ffffffa9;
+  padding-bottom: 40px;
+}
+/* Pricing Area */
+.pricingArea {
+  padding: 80px 0;
+}
+
+.pricingWrapper .global_header {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.pricing_content {
+  padding-top: 60px;
+}
+.pricing_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.priceTable {
+  position: relative;
+  padding-bottom: 130px;
+}
+.pricingTabel_top {
+  text-align: center;
+}
+.pricingHeader {
+  text-align: center;
+  font-weight: 600;
+  color: #092a4b;
+}
+.pricingTitle {
+  font-weight: 36px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.pricingList {
+  padding-top: 30px;
+}
+.pricingList li {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.pricingButton {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  width: 80%;
+  background: var(--primary-color);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 17px;
+  padding: 14px 30px;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+.pricingButton:hover {
+  opacity: 0.7;
 }

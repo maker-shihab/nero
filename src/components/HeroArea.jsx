@@ -1,3 +1,4 @@
+import { heroAreaContent } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 const HeroArea = () => {
@@ -6,14 +7,21 @@ const HeroArea = () => {
       <div className="container">
         <div className="hero_wrapper">
           <div className="hero_text">
-            <h1 className="heading">Hi, I am Linda. I help you to Be Seen on social media.
+            <h1 className="heading">
+              {
+                heroAreaContent.heroTitle
+              }
             </h1>
-            <p className="paragraph-hero">Boost your visibility, bond with the big names, and stay ahead with real-time interactions.
-Embrace the spotlight, and let every tweet pave your way to success!
+            <p className="paragraph-hero">
+              {
+                heroAreaContent.heroPragraph
+              }
             </p>
             <div className="hero_btns">
-              <Link href="/" className="btn btn-primary">
-              Try it Yourself!
+              <Link href={heroAreaContent.btnLink} className="btn btn-primary">
+                {
+                  heroAreaContent.btnText
+                }
               </Link>
             </div>
           </div>
