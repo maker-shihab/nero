@@ -1,14 +1,14 @@
 import { destroyCookie, getCookie } from '@/util/cookie';
 import Link from 'next/link';
 
-function Nav() {
+function Nav({isActive}) {
   const userLoggedIn = getCookie('user') !== undefined;
 
   const handleLogout = () => {
     destroyCookie('user');
   }
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${isActive ? 'active' : '' }`}>
       <ul>
         <li>
           <Link href="/">Home</Link>

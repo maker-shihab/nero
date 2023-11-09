@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }) {
       <div className="dashboard">
       <aside className='dashboard_aside'>
           <Link href='/'>
-            <Image src='/images/logo.svg' alt='logo' width={100} height={40} loading='lazy' />
+            <Image src='/images/logo.png' alt='logo' width={60} height={60} loading='lazy' />
           </Link>
           <div className="dashboard_menu">
             <ul>

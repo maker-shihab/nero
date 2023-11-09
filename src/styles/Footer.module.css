@@ -48,3 +48,25 @@
 .contact a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 991px) {
+  .footer_wrapper {
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer_wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer_cp {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+  .footer_right {
+    grid-template-columns: 1fr;
+  }
+}
